@@ -1,0 +1,91 @@
+/*===================BODY STYLE======================*/
+body {
+    min-width: 375px;
+    margin: 0px;
+}
+
+/*==============HEADER STYLE=====================*/
+header {
+    background-color: #708090;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+}
+
+header h2 {
+    margin: auto;
+    text-align: center;  
+}
+
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #dee2e6;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+/* header nav {
+    text-align: right;
+    padding-right: 15px;
+}
+
+header nav li {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+header nav li a {
+    text-decoration: none;
+} */
+
+/*================MAIN STYLE================*/
+main{
+    padding: 15px 20px;
+    /* background-color: #e9ecee; */
+    color: #3c454e;
+    margin:auto;
+}
+
+main a {
+    color:#3c454e;
+}
+
+main a:hover {
+    color:#907080;
+}
+
+main h1, main h2, main h3 {
+    color: #907080;
+}
+
+main h2 {
+    padding-top: 15px;
+}
+
+h2+ul, h2+ol, h2+p, h3+ul, h3+ol, h3+p {
+    margin-top: -15px;
+}
+
+/* ***************************************
+==============RESPONSIVE STYLES===========
+*************************************** */
+@media (min-width: 750px) {
+    main {
+        padding: 15px 50px;
+        max-width: 1000px;
+    }
+}
+
+
+
+/*possible color schemes https://www.colorhexa.com/708090#:~:text=%23708090%20Color%20Information&text=In%20a%20RGB%20color%20space,%25%20yellow%20and%2043.5%25%20black.*/
