@@ -1,27 +1,10 @@
 function showAllWeeks() {
 
-    // const links = [{
-    //     label: "Week1 Notes",
-    //     url: "weekOne/index.html"
-    // }
-    //     {
-    //     label: "Week2 Notes",
-    //     url: "weekTwo/index.html"
-    // }]
-
-    // const links = [
-    //     [label: "Week1 Notes", url: "weekOne/index.html"],
-    //     [label: "Week2 Notes", url: "weekTwo/index.html"]
-    // ];
-
-    const links = [{
-            label: "Week1 Notes",
-            url: "weekOne/index.html"
-        },
-        {
-            label: "Week2 Notes",
-            url: "weekTwo/index.html"
-        }]
+    const links = [
+        { label: "Week1 Notes", url: "weekOne/index.html" },
+        { label: "Week2 Notes", url: "weekTwo/index.html" },
+        { label: "Week3 Notes", url: "weekThree/index.html" }
+    ];
 
     if (links != null) {
         // var allWeeks = JSON.parse(links)
