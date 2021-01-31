@@ -1,0 +1,18 @@
+h1{
+text-align: center;
+
+}
+h2{
+    text-align:center;
+}
+.hike {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+li{
+list-style-type: none;
+}
+.image {
+padding:20px 50px ;
+
+}
