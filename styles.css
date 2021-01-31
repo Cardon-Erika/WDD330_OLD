@@ -76,9 +76,22 @@ h2+ul, h2+ol, h2+p, h3+ul, h3+ol, h3+p {
     margin-top: -15px;
 }
 
-#all_weeks_display {
-    font-size: 1.2em;
+/* #all_weeks_display {
+} */
+
+.weekEntry {
+    border: #3c3c3c solid 1px;
+    /* border-left: #3c3c3c solid 1px;
+    border-right: #3c3c3c solid 5px;
+    border-bottom: #3c3c3c solid 5px; */
+    padding: 0px 15px 15px 15px;
+    border-radius: 10px;
 }
+
+.weekEntry a {
+    text-decoration: none;
+}
+
 
 /* ***************************************
 ==============RESPONSIVE STYLES===========
