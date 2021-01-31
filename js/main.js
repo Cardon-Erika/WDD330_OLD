@@ -1,9 +1,10 @@
 function showAllWeeks() {
 
     const links = [
-        { label: "Week1 Notes", url: "weekOne/index.html" },
-        { label: "Week2 Notes", url: "weekTwo/index.html" },
-        { label: "Week3 Notes", url: "weekThree/index.html" }
+        { label: "Week 1", url: "weekOne/index.html" },
+        { label: "Week 2", url: "weekTwo/index.html" },
+        { label: "Week 3", url: "weekThree/index.html" },
+        { label: "Week 4", url: "weekFour/index.html" }
     ];
 
     if (links != null) {
