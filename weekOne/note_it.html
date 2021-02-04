@@ -63,9 +63,11 @@
             resize: none;
         }
     </style>
+    <link rel="stylesheet" href="../styles.css" />
 </head>
 
 <body onload="showAllNotes()">
+    <main>
     <section id="note_entry_area">
         <h1>Note It!</h1>
         Description:<input id=description_input></input>
@@ -73,6 +75,8 @@
         <button onclick="saveNote()">Save</button>
     </section>
     <section id="all_notes_display"></section>
+    <div class="flexContainer"><div class="returnbtn grow"><a href="../index.html">Return to Portfolio</a></div></div>   
+    </main>
 </body>
 
 </html>

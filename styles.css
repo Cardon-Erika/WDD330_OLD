@@ -2,6 +2,7 @@
 body {
     min-width: 375px;
     margin: 0px;
+    background-color: #dee2e6;
 }
 
 /*==============HEADER STYLE=====================*/
@@ -52,6 +53,7 @@ header nav li a {
 main{
     padding: 15px 20px;
     /* background-color: #e9ecee; */
+    background-color: #ffffff;
     color: #3c454e;
     margin:auto;
 }
@@ -76,19 +78,39 @@ h2+ul, h2+ol, h2+p, h3+ul, h3+ol, h3+p {
     margin-top: -15px;
 }
 
-/* #all_weeks_display {
-} */
+#all_weeks_display {
+    padding: 15px 20px;
+}
 
 .weekEntry {
-    border: #3c3c3c solid 1px;
+    border: #3c454e solid 1px;
     /* border-left: #3c3c3c solid 1px;
     border-right: #3c3c3c solid 5px;
     border-bottom: #3c3c3c solid 5px; */
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 15px 20px;
     border-radius: 10px;
 }
 
 .weekEntry a {
+    text-decoration: none;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.returnbtn {
+    border: #3c454e solid 1px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+    width: 150px;
+    font-weight: bold;
+}
+
+.returnbtn a {
     text-decoration: none;
 }
 
