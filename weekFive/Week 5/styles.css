@@ -1,18 +1,102 @@
-h1{
-text-align: center;
+/* Week 5 group project */
 
+main {
+    max-width: 1000px;
+    margin: auto;
 }
-h2{
-    text-align:center;
+
+h3 {
+    margin-bottom: 0px;
 }
+
+p {
+    margin-top: 0px;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    background-color: lightgray;
+    padding: 15px;
+}
+
 .hike {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    border-bottom: black solid 2px;
 }
-li{
-list-style-type: none;
-}
-.image {
-padding:20px 50px ;
 
+li {
+    list-style-type: none;
+}
+
+.image {
+    padding: 20px 50px;
+}
+
+img {
+    box-shadow: 5px 5px 10px;
+}
+
+/* For my own page */
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+main a {
+    color:#3c454e;
+}
+
+main a:hover {
+    color:#907080;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.returnbtn {
+    border: #3c454e solid 1px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+    width: 150px;
+    font-weight: bold;
+}
+
+.returnbtn a {
+    text-decoration: none;
+}
+
+div.hike {
+    transition: all .2s ease-in-out;
+}
+
+div.hike:hover {
+    transform: scale(1.1);
+}
+
+/* .hiddenAttributes > .additionalInfo {
+    visibility: hidden;
+}
+
+div.hiddenAttributes:hover > .additionalInfo {
+    visibility: visible;
+} */
+
+div.hike > .hiddenAttributes > .additionalInfo {
+    visibility: hidden;
+}
+
+div.hike:hover > .hiddenAttributes > .additionalInfo {
+    visibility: visible;
 }
