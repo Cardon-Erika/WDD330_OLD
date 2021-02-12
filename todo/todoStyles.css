@@ -1,0 +1,168 @@
+body {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    min-width: 375px;
+    background-color: #dee2e6;
+    margin: auto 0px;
+    /* justify-items: stretch; */
+}
+
+main {
+    grid-column: 2 /  3;
+    /* justify-self: stretch; */
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 10px;
+    align-items: center;
+    background-color: #ffffff;
+    color: #3c454e;
+
+}
+
+h1 {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 15px 0px
+}
+
+/* Todo list */
+/* section#all_todo_display {
+    margin: auto;
+    max-width: 600px;
+} */
+
+section#all_todo_display {
+    /* display: grid;
+    grid-template-columns: minmax(350px, 1fr);
+    align-items: center; */
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+input#select {
+    /* margin-right: 15px; */
+}
+
+.listItem {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0px;
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.listItem:nth-child(1) {
+    border-top: 1px solid black;
+}
+
+
+/* Add item to todo list */
+/* section#saveTodo {
+    text-align: center;
+    padding-top: 15px;
+} */
+
+section#saveTodo {
+    /* min-width: 335px; */
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 89% 9%;
+    grid-template-rows: auto;
+    column-gap: 2%;
+    align-items: center;
+}
+
+input#todo_input {
+    /* min-width: 275px; */
+    padding: 5px;
+}
+
+button.saveTodo {
+    /* justify-self: end; */
+    padding: 5px 0px;
+}
+
+/* Checkbox */
+input[type=checkbox]:checked + label.strikethrough {
+    text-decoration: line-through;
+}
+
+/* Delete button */
+a#delete {
+    /* float: right; */
+}
+
+/* Tally Info */
+section#tally {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    margin-bottom: 15px;;
+}
+
+section#tally h4 {
+    margin: 0px;
+    color: #907080
+}
+
+/* Return button */
+/* div.flexContainer {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: end;
+    margin-bottom: 15px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.returnbtn {
+    border: #3c454e solid 1px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+    width: 150px;
+    font-weight: bold;
+}
+
+.returnbtn a {
+    text-decoration: none;
+} */
+
+main a {
+    color:#3c454e;
+}
+
+main a:hover {
+    color:#907080;
+}
+
+main h1, main h2, main h3 {
+    color: #907080;
+}
+
+/* ***************************************
+==============RESPONSIVE STYLES===========
+*************************************** */
+@media (min-width: 750px) {
+    main {
+        max-width: 1000px;
+    }
+}

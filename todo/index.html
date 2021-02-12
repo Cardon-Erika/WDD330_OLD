@@ -5,22 +5,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo Challenge</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <!-- <script src="../js/main.js"></script> -->
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
+    <link rel="stylesheet" href="todoStyles.css" />
 </head>
 
-<body>
+<body onload="showAllTodo()">
     <main>
         <h1>Todos</h1>
-        <ul id="buildList"></ul>
+        <!-- First way I played with it, set up like list in week 4 -->
+        <!-- <ul id="buildList"></ul>
         <form id="input">
             <input type="text" name="name" placeholder="Add an item to your todo list" required>
             <button type="submit">+</button>
-        </form>
+        </form> -->
+
+        <!-- Set up like note_it from week 1 with localStorage -->
+        <section id="all_todo_display"></section>
+        <section id="saveTodo">
+            <input id="todo_input" placeholder="Add an item to your todo list"></input>
+            <button class="saveTodo" onclick="saveTodo()">+</button>
+        </section>
+        <section id="tally">
+            <h4><span id="todoRemaining">0</span> items left</h4>
+            <h4>all</h4>
+            <h4>active</h4>
+            <h4>completed</h4>
+        </section>
         <script src="main.js"></script>
-        
+
         <!-- Return to Porfolio button-->
-        <div class="flexContainer"><div class="returnbtn grow"><a href="../index.html">Return to Portfolio</a></div></div>
+        <!-- <div class="flexContainer">
+            <div class="returnbtn grow"><a href="../index.html">Return to Portfolio</a></div>
+        </div> -->
     </main>
 </body>
 
